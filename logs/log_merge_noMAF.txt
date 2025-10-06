@@ -1,0 +1,51 @@
+Beginning analysis at Mon Oct  6 13:40:18 2025
+/software/local/languages/miniforge3/envs/ldsc-2.0.1/lib/python3.10/site-packages/ldscore/parse.py:265: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  self.df = pd.read_csv(fname, header=self.__header__, usecols=self.__usecols__,
+Read list of 17109 SNPs from /user/home/xd14188/repo/1kg_hg38_LDscore/resources/hm3_filtered_cm/SAS_hm3_chr22.bim
+/software/local/languages/miniforge3/envs/ldsc-2.0.1/lib/python3.10/site-packages/ldscore/parse.py:265: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  self.df = pd.read_csv(fname, header=self.__header__, usecols=self.__usecols__,
+Read list of 489 individuals from /user/home/xd14188/repo/1kg_hg38_LDscore/resources/hm3_filtered_cm/SAS_hm3_chr22.fam
+Reading genotypes from /user/home/xd14188/repo/1kg_hg38_LDscore/resources/hm3_filtered_cm/SAS_hm3_chr22.bed
+After filtering, 17109 SNPs remain
+Estimating LD Score.
+Writing LD Scores for 17109 SNPs to ldsc_out_NoMAF/SAS_w_hm3/chr22.l2.ldscore.gz
+
+Summary of LD Scores in ldsc_out_NoMAF/SAS_w_hm3/chr22.l2.ldscore.gz
+         MAF       L2
+mean  0.2417  15.7812
+std   0.1412  13.1943
+min   0.0102   0.7100
+25%   0.1155   6.7051
+50%   0.2372  11.5902
+75%   0.3640  20.2554
+max   0.5000  91.5108
+
+MAF/LD Score Correlation Matrix
+       MAF     L2
+MAF  1.000  0.229
+L2   0.229  1.000
+Analysis finished at Mon Oct  6 13:40:20 2025
+Total time elapsed: 2.17s
+[MERGE] AFR (22 chromosomes)
+  done AFR: rows=1147231
+           M=1147230
+      M_5_50=1034491
+[MERGE] AMR (22 chromosomes)
+  done AMR: rows=1203158
+           M=1203157
+      M_5_50=1093480
+[MERGE] EAS (22 chromosomes)
+  done EAS: rows=1065509
+           M=1065508
+      M_5_50=960476
+[MERGE] EUR (22 chromosomes)
+  done EUR: rows=1185193
+           M=1185192
+      M_5_50=1078259
+[MERGE] SAS (22 chromosomes)
+  done SAS: rows=1175955
+           M=1175954
+      M_5_50=1073815
+[DONE] merged outputs in ldsc_out_NoMAF/<POP>_w_hm3/
+[ALL DONE]
+[xd14188@compute202(BlueCrystal4) 1kg_hg38_LDscore]$ 

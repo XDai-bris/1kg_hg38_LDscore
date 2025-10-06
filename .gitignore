@@ -1,0 +1,5 @@
+ldsc_out
+ldsc_out_NoMAF
+resources
+/test/ldsc_check_out/gwas_for_ldsc.tsv
+/test/ldsc_check_out/gwas_hg38.sumstats.gz

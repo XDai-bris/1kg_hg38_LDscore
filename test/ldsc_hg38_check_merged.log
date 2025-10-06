@@ -1,0 +1,32 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 2.0.0
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out ldsc_hg38_check_merged \
+--h2 /user/home/xd14188/repo/1kg_hg38_LDscore/test/ldsc_check_out/gwas_hg38.sumstats.gz \
+--ref-ld /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/EUR_w_hm3/EUR \
+--w-ld /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/EUR_w_hm3/EUR 
+
+Beginning analysis at Mon Oct  6 13:57:55 2025
+Reading summary statistics from /user/home/xd14188/repo/1kg_hg38_LDscore/test/ldsc_check_out/gwas_hg38.sumstats.gz ...
+Read summary statistics for 10170668 SNPs.
+Reading reference panel LD Score from /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/EUR_w_hm3/EUR ... (ldscore_fromlist)
+Read reference panel LD Scores for 1185192 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/EUR_w_hm3/EUR ... (ldscore_fromlist)
+Read regression weight LD Scores for 1185192 SNPs.
+After merging with reference panel LD, 1183121 SNPs remain.
+After merging with regression SNP LD, 1183121 SNPs remain.
+Using two-step estimator with cutoff at 30.
+Total Observed scale h2: 0.255 (0.0077)
+Lambda GC: 2.5641
+Mean Chi^2: 3.5141
+Intercept: 1.1837 (0.0172)
+Ratio: 0.0731 (0.0068)
+Analysis finished at Mon Oct  6 13:58:23 2025
+Total time elapsed: 27.96s

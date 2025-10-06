@@ -1,0 +1,48 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 2.0.0
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--sumstats gwas_for_ldsc.tsv \
+--out gwas_hg38 \
+--snp SNP \
+--N-col N \
+--a1 A1 \
+--a2 A2 \
+--p P \
+--signed-sumstats BETA,0 
+
+Interpreting column names as follows:
+SNP:	Variant ID (e.g., rs number)
+A1:	Allele 1, interpreted as ref allele for signed sumstat.
+A2:	Allele 2, interpreted as non-ref allele for signed sumstat.
+BETA:	Directional summary statistic as specified by --signed-sumstats.
+P:	p-Value
+N:	Sample size
+
+Reading sumstats from gwas_for_ldsc.tsv into memory 5000000 SNPs at a time.
+WARNING: 6 SNPs had P outside of (0,1]. The P column may be mislabeled.
+Read 11977208 SNPs from --sumstats file.
+Removed 0 SNPs with missing values.
+Removed 0 SNPs with INFO <= 0.9.
+Removed 0 SNPs with MAF <= 0.01.
+Removed 6 SNPs with out-of-bounds p-values.
+Removed 1800919 variants that were not SNPs or were strand-ambiguous.
+10176283 SNPs remain.
+Removed 5615 SNPs with duplicated rs numbers (10170668 SNPs remain).
+Removed 0 SNPs with N < 305216.0 (10170668 SNPs remain).
+Median value of SIGNED_SUMSTATS was -1.6702299999999998e-05, which seems sensible.
+Writing summary statistics for 10170668 SNPs (10170668 with nonmissing beta) to gwas_hg38.sumstats.gz.
+
+Metadata:
+Mean chi^2 = 2.405
+Lambda GC = 1.767
+Max chi^2 = 1430.977
+66215 Genome-wide significant SNPs (some may have been removed by filtering).
+
+Conversion finished at Mon Oct  6 11:37:57 2025
+Total time elapsed: 3.0m:35.74000000000001s

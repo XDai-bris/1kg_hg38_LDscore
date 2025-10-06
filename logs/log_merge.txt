@@ -1,0 +1,26 @@
+[xd14188@compute202(BlueCrystal4) 1kg_hg38_LDscore]$ ./src.sh 
+[env] python = /software/local/languages/miniforge3/envs/ldsc-2.0.1/bin/python
+[env] ldsc   = python /user/home/xd14188/ldsc_patched/ldsc.py
+[env] OUTROOT= ldsc_out
+[MERGE] AFR (22 chromosomes)
+  done AFR: rows=1147231
+           M=1147230
+      M_5_50=1034491
+[MERGE] AMR (22 chromosomes)
+  done AMR: rows=1203158
+           M=1203157
+      M_5_50=1093480
+[MERGE] EAS (22 chromosomes)
+  done EAS: rows=1065509
+           M=1065508
+      M_5_50=960476
+[MERGE] EUR (22 chromosomes)
+  done EUR: rows=1185193
+           M=1185192
+      M_5_50=1078259
+[MERGE] SAS (22 chromosomes)
+  done SAS: rows=1175955
+           M=1175954
+      M_5_50=1073815
+[DONE] merged outputs in ldsc_out/<POP>_w_hm3/
+[ALL DONE]
