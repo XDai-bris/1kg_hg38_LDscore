@@ -8,7 +8,7 @@ GWAS_GZ="/user/home/xd14188/repo/gwas2vcf/test/gwas_b38/29892013-GCST90029007-EF
 
 # Merged ldscore base (NO suffix); expects:
 #   ${LD_BASE}.l2.ldscore.gz  (+ optional ${LD_BASE}.l2.M, ${LD_BASE}.l2.M_5_50)
-LD_BASE="/user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/SAS_w_hm3/SAS"
+LD_BASE="/user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/EAS_w_hm3/EAS"
 
 # If your input has per-SNP 'n', set N_FROM_COL=1; else 0 and set CONST_N.
 N_FROM_COL=1
