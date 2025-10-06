@@ -1,0 +1,32 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 2.0.0
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out test_diff_pop \
+--h2 gwas_hg38.sumstats.gz \
+--ref-ld /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/SAS_w_hm3/SAS \
+--w-ld /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/SAS_w_hm3/SAS 
+
+Beginning analysis at Mon Oct  6 15:34:04 2025
+Reading summary statistics from gwas_hg38.sumstats.gz ...
+Read summary statistics for 10170668 SNPs.
+Reading reference panel LD Score from /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/SAS_w_hm3/SAS ... (ldscore_fromlist)
+Read reference panel LD Scores for 1175954 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /user/home/xd14188/repo/1kg_hg38_LDscore/ldsc_out_NoMAF/SAS_w_hm3/SAS ... (ldscore_fromlist)
+Read regression weight LD Scores for 1175954 SNPs.
+After merging with reference panel LD, 1172533 SNPs remain.
+After merging with regression SNP LD, 1172533 SNPs remain.
+Using two-step estimator with cutoff at 30.
+Total Observed scale h2: 0.2656 (0.0091)
+Lambda GC: 2.5641
+Mean Chi^2: 3.5212
+Intercept: 1.3676 (0.0204)
+Ratio: 0.1458 (0.0081)
+Analysis finished at Mon Oct  6 15:34:34 2025
+Total time elapsed: 29.55s
